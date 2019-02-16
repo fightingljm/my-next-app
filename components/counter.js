@@ -28,9 +28,9 @@ class Counter extends Component {
                 <h1>
                     Count: <span>{count}</span>
                 </h1>
-                <Button onClick={this.increment}>+1</Button>
                 <Button onClick={this.decrement}>-1</Button>
                 <Button onClick={this.reset}>Reset</Button>
+                <Button onClick={this.increment}>+1</Button>
             </div>
         )
     }
