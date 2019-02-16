@@ -3,9 +3,9 @@ import React from 'react'
 const pad = n => (n < 10 ? `0${n}` : n)
 
 const format = t => {
-    const hours = t.getUTCHours()
-    const minutes = t.getUTCMinutes()
-    const seconds = t.getUTCSeconds()
+    const hours = t.getHours()
+    const minutes = t.getMinutes()
+    const seconds = t.getSeconds()
     return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`
 }
 
