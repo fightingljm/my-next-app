@@ -1,6 +1,6 @@
-# NEXT.js 初试
+# NEXT.js
 
-## 新建一个Nextjs应用
+## Hello Next.js
 
 ### 安装依赖
 
@@ -24,4 +24,32 @@ yarn add react react-dom next
 
 ```bash
 yarn dev
+```
+
+## Next路由
+
+```js
+// /pages/index.js
+import React, { Fragment } from 'react';
+import Link from 'next/link';
+
+const Home = () => (
+    <Fragment>
+        <h1>我是Next的首页</h1>
+        <Link href='/userList'>
+            <a>用户列表页</a>
+        </Link>
+    </Fragment>
+);
+
+export default Home;
+```
+
+```js
+// /pages/userList.js
+const UserList = () => (
+    <h2>我是用户列表页</h2>
+);
+
+export default UserList;
 ```
